@@ -286,7 +286,7 @@
             <p class="sub">Choose wisely. (The “No” button is… shy.)</p>
 
             <div class="row" id="playground">
-                <div class="yes-slot" id="noSlot">
+                <div class="yes-slot">
                     <button class="yes" id="yesBtn">YES</button>
                 </div>
 
@@ -313,7 +313,7 @@
 
     <script>
         // ✅ Change name here
-        const WIFE_NAME = "Manu";
+        const WIFE_NAME = "Nithin";
 
         // ✅ Tweak how hard NO is to click
         const EVADE_DISTANCE = 50;
@@ -465,13 +465,13 @@
                 const p = document.createElement("i");
                 p.style.left = (Math.random() * 100) + "vw";
                 p.style.animationDelay = (Math.random() * 1.2) + "s";
-                p.style.animationDuration = (1.4 + Math.random() * 1.5) + "s";
-                const hue = Math.floor(Math.random() * 360);
-                p.style.background = `hsl(${hue} 90% 60%)`;
-                confetti.appendChild(p);
-            }
-            setTimeout(() => confetti.classList.add("hidden"), 7000);
-        }
+                        p.style.animationDuration = (1.4 + Math.random() * 1.5) + "s";
+                        const hue = Math.floor(Math.random() * 360);
+                        p.style.background = `hsl(${hue} 90% 60%)`;
+                        confetti.appendChild(p);
+                    }
+                    setTimeout(() => confetti.classList.add("hidden"), 7000);
+                }
     </script>
 </body>
 
